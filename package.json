@@ -1,0 +1,29 @@
+{
+  "name": "shit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "babel-node src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf lib && babel src --out-dir lib --source-maps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.6.1",
+    "koa-router": "^7.4.0",
+    "redis": "^2.8.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-flow": "^7.0.0",
+    "flow-bin": "^0.85.0",
+    "rimraf": "^2.6.2",
+    "source-map-support": "^0.5.9"
+  }
+}
